@@ -163,3 +163,30 @@ function BackButton() {
 Of course, this doesn't immediately render `<button>Back To Home</button>` onto the browser screen. We've only defined our component.
 
 Let's continue to see how to render it and understand why the `return` statement is necessary!
+
+
+## 8. Importing and Exporting React Components
+
+Before we can use the component we've defined and have it rendered onto the DOM, there's some additional work to do.
+
+As mentioned earlier, a React application typically consists of two core files: `App.js` and `index.js`. The `App.js` file serves as the top level of your application, while `index.js` acts as the entry point.
+
+Since we've defined the component inside `App.js`, and `index.js` is the entry point, we need to export the component from `App.js` to `index.js` in order to render it.
+
+React components are highly reusable, and we can keep our component pieces separated, organized, and reusable by placing them in separate files and exporting them to where we need them.
+
+To export a component, we use the `export` declaration and specify whether it's a default or named export. In this case, we'll use a default export.
+
+After defining the function component in `App.js`, we can export it as the default export like this:
+
+```jsx
+export default MyComponent;
+```
+
+Now, we can head into our `index.js` file to import our component from `App.js`:
+
+```jsx
+import MyComponent from './App';
+```
+
+This allows us to use `MyComponent` in `index.js`.
