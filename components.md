@@ -317,3 +317,35 @@ function RandomNumber() {
 ```
 
 In the above example, the line with the `const n` declaration will cause a syntax error, as it should come before the `return`.
+
+
+Certainly! Here's the provided information formatted in Markdown:
+
+---
+
+## 4. Use a Conditional in a Function Component
+
+To use a conditional statement inside a function component, you can place it within the component, typically before the `return` statement.
+
+Here's an example from `TodaysPlan.js`:
+
+```jsx
+import React from 'react';
+
+function TodaysPlan() {
+    let task;
+    let apocalypse = false;
+    if (!apocalypse) {
+      task = 'learn React.js';
+    } else {
+      task = 'run around';
+    }
+    return <h1>Today I am going to {task}!</h1>;
+}
+
+export default TodaysPlan;
+```
+
+In this example, there's an `if` statement inside the function component that determines the value of the `task` variable based on the `apocalypse` variable. The `return` statement then uses the `task` variable to display the appropriate message.
+
+The key is to ensure that the conditional logic is placed before the `return` statement, as shown in the example.
