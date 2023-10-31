@@ -41,3 +41,17 @@ By importing the library, we can use important features such as Hooks, which we'
 
 For the next few exercises, we'll be working in two files: `App.js` and `index.js`. In a React application, the `App.js` file typically is the top level of your application, and `index.js` is the entry point.
 
+
+## 3. Import ReactDOM
+
+Another import we need in addition to React is ReactDOM:
+
+```jsx
+import ReactDOM from 'react-dom/client';
+```
+
+The methods imported from 'react-dom' interact with the DOM.
+
+The methods imported from 'react' do not deal with the DOM at all. They don't engage directly with anything that isn't part of React.
+
+To clarify: the DOM is used in React applications, but it isn't part of React. After all, the DOM is also used in countless non-React applications. Methods imported from 'react' are only for pure React purposes, such as creating components or writing JSX elements.
