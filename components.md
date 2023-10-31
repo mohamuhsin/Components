@@ -132,3 +132,34 @@ Let's review what you've learned so far by examining `App.js` and `index.js`:
    ```
 
    That doesn't look like a set of instructions explaining how to build a React component! Yet that's exactly what it is.
+
+
+## 7. The Return Keyword in Functional Components
+
+When we define a functional component, we essentially create a factory that can build the appropriate combination of elements every time we reference its name. It builds this combination by following a set of instructions that you must provide.
+
+If you're thinking, "That sounds just like what a regular JavaScript function is for," then you're right! Functional components can be thought of in a very similar vein to regular JavaScript functions, except that their job is to assemble a portion of the interface based on given instructions!
+
+Let's talk a bit more about these instructions.
+
+Firstly, these instructions should take the form of a function declaration body, delimited by curly braces, like this:
+
+```jsx
+function Button() {
+  // Instructions go here, between the curly braces.
+}
+```
+
+Our instructions can include a combination of markup, CSS, and JavaScript to produce the desired result. The one thing we must always include is a `return` statement.
+
+The function is expected to produce JSX code that can be used to render something onto the browser screen. Thus, when we define functional components, we must return a JSX element.
+
+```jsx
+function BackButton() {
+ return <button>Back To Home</button>;
+}
+```
+
+Of course, this doesn't immediately render `<button>Back To Home</button>` onto the browser screen. We've only defined our component.
+
+Let's continue to see how to render it and understand why the `return` statement is necessary!
