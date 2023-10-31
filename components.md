@@ -2,7 +2,7 @@
 
 React applications are made of components.
 
-## What's a Component?
+## 1. What's a Component?
 
 A component is a small, reusable chunk of code that is responsible for one job. That job is often to render some HTML and re-render it when some data changes.
 
