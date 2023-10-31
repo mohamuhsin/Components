@@ -89,3 +89,18 @@ Combined, this makes a basic React functional component.
 On the last line of the above code block, `MyComponent` is exported so it can be used later.
 
 A lot of it is still unfamiliar, but you can understand more than you could before! Let's keep going!
+
+
+## 5. Name a Functional Component
+
+Great! When creating a new functional component in JavaScript, you need to provide it with a name. In the example provided earlier, the component's name was "MyComponent":
+
+```jsx
+function MyComponent() {
+  return <h1>Hello world</h1>;
+}
+```
+
+It's important to note that function component names must start with capitalization, and conventionally, they are created using PascalCase. This naming convention is crucial because of how JSX tags are compiled. Capitalization indicates that it is a React component rather than an HTML tag.
+
+This is a React-specific nuance! When creating a component, make sure to name it starting with a capital letter. This way, React will interpret it as a React component. If the name begins with a lowercase letter, React will assume you are referring to a built-in HTML component like `div` or `input` and may fail to recognize your custom component.
