@@ -23,9 +23,6 @@ ReactDOM.createRoot(
 
 A lot of these look unfamiliar but do not worry. We are going to unpack that code, one small piece at a time. By the end of this lesson, you'll understand how to build a React component!
 
-Certainly! Here's the provided information formatted in Markdown:
-
----
 
 ## 2. Import React
 
