@@ -345,3 +345,35 @@ export default TodaysPlan;
 In this example, there's an `if` statement inside the function component that determines the value of the `task` variable based on the `apocalypse` variable. The `return` statement then uses the `task` variable to display the appropriate message.
 
 The key is to ensure that the conditional logic is placed before the `return` statement, as shown in the example.
+
+
+Certainly! Here's the provided information formatted in Markdown:
+
+---
+
+## 5. Event Listeners and Event Handlers in a Component
+
+Your function components can include event handlers. With event handlers, you can run some code in response to interactions with the interface, such as clicking.
+
+```jsx
+function MyComponent(){
+  function handleHover() {
+    alert('Stop it.  Stop hovering.');
+  }
+  return <div onHover={handleHover}></div>;
+}
+```
+
+In the above example, the event handler is `handleHover()`. It is passed as a prop to the JSX element `<div>`. We'll discuss more about props in a later lesson, but for now, understand that props are information passed to a JSX tag.
+
+The logic for what should happen when the `<div>` is hovered on is contained inside the `handleHover()` function. The function is then passed to the `<div>` element.
+
+Event handler functions are defined inside the function component and, by convention, start with the word "handle" followed by the type of event it is handling.
+
+There's a small quirk you should watch out for. Take a look at this line again:
+
+```jsx
+return <div onHover={handleHover}></div>
+```
+
+The `handleHover()` function is passed without the parentheses we would typically see when calling a function. This is because passing it as `handleHover` indicates it should only be called once the event has happened. Passing it as `handleHover()` would trigger the function immediately, so be careful!
