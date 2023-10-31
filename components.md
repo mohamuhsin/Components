@@ -286,3 +286,34 @@ How could you render a React component with an image of `redPanda` and its prope
 Select `RedPanda.js` to see one way to do this.
 
 Note all the curly brace JavaScript injections inside the `return` statement. You can, and often will, inject JavaScript into JSX inside the `return` statement.
+
+
+## 3. Putting Logic in a Function Component
+
+A function component must have a return statement, but that's not all it can have.
+
+You can also put simple calculations that need to happen before returning your JSX element within the function component.
+
+Here's an example of some calculations that can be done inside a function component:
+
+```jsx
+function RandomNumber() {
+  // First, some logic that must happen before returning
+  const n = Math.floor(Math.random() * 10 + 1);
+  // Next, a return statement using that logic: 
+  return <h1>{n}</h1>
+}
+```
+
+Watch out for this common mistake:
+
+```jsx
+function RandomNumber() {
+  return (
+    const n = Math.floor(Math.random() * 10 + 1);
+    <h1>{n}</h1>
+  )
+}
+```
+
+In the above example, the line with the `const n` declaration will cause a syntax error, as it should come before the `return`.
