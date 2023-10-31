@@ -105,10 +105,6 @@ It's important to note that function component names must start with capitalizat
 
 This is a React-specific nuance! When creating a component, make sure to name it starting with a capital letter. This way, React will interpret it as a React component. If the name begins with a lowercase letter, React will assume you are referring to a built-in HTML component like `div` or `input` and may fail to recognize your custom component.
 
-Certainly! Here's the provided information formatted in Markdown:
-
----
-
 ## 6. Function Component Instructions
 
 Let's review what you've learned so far by examining `App.js` and `index.js`:
