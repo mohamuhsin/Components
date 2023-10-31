@@ -233,3 +233,6 @@ ReactDOM.createRoot(document.getElementById('app')).render(<MyComponent />);
 From here, React will display `<MyComponent />` in the root and make it appear on the screen.
 
 In an application fully built with React, you will only need to do this once. Once this is set up, React will manage the DOM of your application, and any updates to the UI are taken care of efficiently. Adding more components should take place in your top-level `App.js` file.
+
+
+# Components and Advanced JSX
