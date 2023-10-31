@@ -53,9 +53,6 @@ The methods imported from 'react' do not deal with the DOM at all. They don't en
 
 To clarify: the DOM is used in React applications, but it isn't part of React. After all, the DOM is also used in countless non-React applications. Methods imported from 'react' are only for pure React purposes, such as creating components or writing JSX elements.
 
-Certainly! Here's the provided information formatted in Markdown:
-
----
 
 ## 4. Create a Function Component
 
