@@ -347,10 +347,6 @@ In this example, there's an `if` statement inside the function component that de
 The key is to ensure that the conditional logic is placed before the `return` statement, as shown in the example.
 
 
-Certainly! Here's the provided information formatted in Markdown:
-
----
-
 ## 5. Event Listeners and Event Handlers in a Component
 
 Your function components can include event handlers. With event handlers, you can run some code in response to interactions with the interface, such as clicking.
