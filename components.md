@@ -269,10 +269,6 @@ return <h1>Hello world</h1>;
 However, a multi-line JSX expression should always be wrapped in parentheses! That is why `QuoteMaker`'s `return` statement has parentheses around it.
 
 
-Certainly! Here's the provided information formatted in Markdown:
-
----
-
 ## 2. Use a Variable Attribute in a Component
 
 Take a look at this JavaScript object named `redPanda`:
