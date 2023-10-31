@@ -319,10 +319,6 @@ function RandomNumber() {
 In the above example, the line with the `const n` declaration will cause a syntax error, as it should come before the `return`.
 
 
-Certainly! Here's the provided information formatted in Markdown:
-
----
-
 ## 4. Use a Conditional in a Function Component
 
 To use a conditional statement inside a function component, you can place it within the component, typically before the `return` statement.
