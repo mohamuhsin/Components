@@ -1,3 +1,3 @@
 # Components
 
-In this part of react, we have looked at components, and how to use them with advanced 
+In this part of react, we have looked at components, and how to use them with advance
